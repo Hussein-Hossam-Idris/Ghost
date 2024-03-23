@@ -8,6 +8,7 @@
             "database" : "ghost"
         }
     },
+    "fileStorage": false,
     "paths": {
         "contentPath": "content/"
     },
@@ -16,6 +17,6 @@
         "rotation": {
             "enabled": true
         },
-        "transports": []
+        "transports": ["stdout"]
       }
 }

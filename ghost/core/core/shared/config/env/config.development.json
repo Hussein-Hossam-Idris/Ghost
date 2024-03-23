@@ -1,5 +1,5 @@
 {
-    "url": "https://radiant-firefly-418114.uc.r.appspot.com",
+    "url": "127.0.0.1",
     "database": { 
         "client": "mysql",
         "connection": {
@@ -10,6 +10,7 @@
             "database": "ghost-db"
         }
     },
+    "fileStorage": false,
     "logging": {
         "level": "error",
         "rotation": {
