@@ -11,7 +11,6 @@ COPY . .
 RUN export CONTENT_PATH=$(jq -r '.paths.contentPath // "."' config.${GHOST_ENVIRONMENT}.json)
 RUN mkdir -p ${CONTENT_PATH}/adapters/storage/gcloud
 RUN cat > ${CONTENT_PATH}/adapters/storage/gcloud/index.js << EOL
-RUN 'use strict';
 RUN module.exports = require('ghost-google-cloud-storage');
 
 RUN mkdir -p content/adapters/storage/gcs
