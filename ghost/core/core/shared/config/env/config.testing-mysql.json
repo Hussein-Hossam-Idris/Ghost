@@ -1,7 +1,7 @@
 {
     "url": "https://radiant-firefly-418114.uc.r.appspot.com",
     "server": {
-        "port": 2368
+        "port": 8080
     },
     "database": {
         "client": "mysql",

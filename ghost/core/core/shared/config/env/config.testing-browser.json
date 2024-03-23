@@ -9,7 +9,7 @@
         "debug": false
     },
     "server": {
-        "port": 2368
+        "port": 8080
     },
     "logging": {
         "level": "fatal"
