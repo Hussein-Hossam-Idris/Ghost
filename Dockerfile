@@ -14,5 +14,6 @@ COPY . .
 
 RUN yarn setup
 #this is for app engine
+EXPOSE 2368
 
 ENTRYPOINT [ "yarn" ,"dev" ,"--portal"]

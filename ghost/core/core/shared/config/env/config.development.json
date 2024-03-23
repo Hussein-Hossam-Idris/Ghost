@@ -1,5 +1,5 @@
 {
-    "url": "https://radiant-firefly-418114.uc.r.appspot.com:8080",
+    "url": "https://radiant-firefly-418114.uc.r.appspot.com",
     "database": { 
         "client": "mysql",
         "connection": {

@@ -1,5 +1,5 @@
 {
-    "url": "https://radiant-firefly-418114.uc.r.appspot.com:8080",
+    "url": "https://radiant-firefly-418114.uc.r.appspot.com",
     "database": {
         "client": "sqlite3",
         "connection": {
@@ -9,7 +9,7 @@
         "debug": false
     },
     "server": {
-        "port": 8080
+        "port": 2368
     },
     "logging": {
         "level": "fatal"

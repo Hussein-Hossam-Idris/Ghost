@@ -11,3 +11,4 @@ network:
   subnetwork_name: us-central1
   instance_ip_mode: internal
   forwarded_ports:
+    - 8080:2368
