@@ -2,17 +2,11 @@
     "steps": [
         {
             "name": "gcr.io/cloud-builders/docker",
-            "args": [
-                "-c",
-                "build -t us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA ."
-            ]
+            "args": ["build" ,"-t", "us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA", "."]
         },
         {
             "name": "gcr.io/cloud-builders/docker",
-            "args": [
-                "-c",
-                "push us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA"
-            ]
+            "args": ["push", "us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA"]
         },
         {
             "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
