@@ -1,11 +1,14 @@
 {
-    "url": "http://localhost:8080",
-    "database": {
-        "client": "sqlite3",
+    "url": "https://radiant-firefly-418114.us-central1.r.appspot.com:8080",
+    "database": { 
+        "client": "mysql",
         "connection": {
-            "filename": "content/data/ghost-dev.db"
-        },
-        "debug": false
+            "host": "10.100.0.3",
+            "port": 3306,
+            "user": "root",
+            "password": "(gky_>M?RxGzR(50",
+            "database": "ghost-db"
+        }
     },
     "paths": {
         "contentPath": "content/"
