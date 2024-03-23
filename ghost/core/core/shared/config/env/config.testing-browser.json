@@ -1,5 +1,5 @@
 {
-    "url": "https://radiant-firefly-418114.uc.r.appspot.com",
+    "url": "http://localhost:8080",
     "database": {
         "client": "sqlite3",
         "connection": {
