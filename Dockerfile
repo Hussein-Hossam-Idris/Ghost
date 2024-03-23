@@ -4,12 +4,11 @@ RUN apk update
 RUN apk add --no-cache git curl bash
 RUN npm install husky -g
 RUN yarn global add knex-migrator ember-cli
-RUN export GHOST_ENVIRONMENT=development
 
 WORKDIR /app
 COPY . .
 RUN mkdir -p content/adapters/storage/gcs
-RUN npm install ghost-google-cloud-storage
+RUN npm install ghost-google-cloud-storage --force
 RUN mv node_modules/ghost-google-cloud-storage/* content/adapters/storage/gcs/
 
 
