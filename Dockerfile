@@ -14,6 +14,5 @@ COPY . .
 
 RUN yarn setup
 #this is for app engine
-EXPOSE 8080
 
-ENTRYPOINT [ "yarn" ,"dev" ,"--portal" ]
+ENTRYPOINT [ "yarn" ,"dev" ,"--portal"]
