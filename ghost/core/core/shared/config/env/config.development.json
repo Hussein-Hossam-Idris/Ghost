@@ -32,12 +32,5 @@
         "admin": {
             "maxAge": 0
         }
-    },
-    "storage": {
-        "active": "gcs",
-        "projectId": "radiant-firefly-418114",
-        "gcs": {
-          "bucket": "ghost-test-image-storage"
-        }
-      }
+    }
 }
