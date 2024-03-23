@@ -7,12 +7,9 @@ RUN yarn global add knex-migrator ember-cli
 
 WORKDIR /app
 COPY . .
-# RUN mkdir -p content/adapters/storage/gcs
-# RUN npm install ghost-google-cloud-storage --force
-# RUN mv node_modules/ghost-google-cloud-storage/* content/adapters/storage/gcs/
-
 
 RUN yarn setup
+
 #this is for app engine
 EXPOSE 8080
 

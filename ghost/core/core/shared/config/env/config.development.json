@@ -7,7 +7,7 @@
             "port": 3306,
             "user": "root",
             "password": "(gky_>M?RxGzR(50",
-            "database": "ghost"
+            "database": "ghost-db"
         }
     },
     "logging": {
