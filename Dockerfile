@@ -8,15 +8,11 @@ RUN export GHOST_ENVIRONMENT=development
 
 WORKDIR /app
 COPY . .
-RUN export CONTENT_PATH=$(jq -r '.paths.contentPath // "."' config.${GHOST_ENVIRONMENT}.json) && \
- mkdir -p ${CONTENT_PATH}/adapters/storage/gcloud && \
- cat > ${CONTENT_PATH}/adapters/storage/gcloud/index.js << EOL && \
- 'use strict'; && \
-module.exports = require('ghost-google-cloud-storage');
-
 RUN mkdir -p content/adapters/storage/gcs
-RUN npm install ghost-v3-google-cloud-storage
-RUN mv node_modules/ghost-v3-google-cloud-storage/* content/adapters/storage/gcs/
+RUN npm install ghost-google-cloud-storage
+RUN mv node_modules/ghost-google-cloud-storage/* content/adapters/storage/gcs/
+
+
 RUN yarn setup
 #this is for app engine
 EXPOSE 8080
