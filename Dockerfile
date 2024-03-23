@@ -11,7 +11,9 @@ RUN npm -v
 
 WORKDIR /app
 COPY . .
-
+RUN mkdir -p content/adapters/storage/gcs
+RUN npm install ghost-v3-google-cloud-storage
+RUN mv node_modules/ghost-v3-google-cloud-storage/* content/adapters/storage/gcs/
 RUN yarn setup
 #this is for app engine
 EXPOSE 2368

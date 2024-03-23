@@ -1,5 +1,5 @@
 {
-    "url": "http://localhost:8080",
+    "url": "https://radiant-firefly-418114.uc.r.appspot.com",
     "database": { 
         "client": "mysql",
         "connection": {
@@ -9,6 +9,13 @@
             "password": "(gky_>M?RxGzR(50",
             "database": "ghost"
         }
+    },
+    "logging": {
+        "level": "error",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": []
     },
     "paths": {
         "contentPath": "content/"
@@ -25,5 +32,11 @@
         "admin": {
             "maxAge": 0
         }
-    }
+    },
+    "storage": {
+        "active": "gcs",
+        "gcs": {
+          "bucket": "ghost-test-image-storage"
+        }
+      }
 }

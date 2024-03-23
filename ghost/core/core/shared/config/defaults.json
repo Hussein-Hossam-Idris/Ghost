@@ -1,5 +1,5 @@
 {
-    "url": "http://localhost:8080",
+    "url": "https://radiant-firefly-418114.uc.r.appspot.com",
     "server": {
         "host": "0.0.0.0",
         "port": 8080,
@@ -50,17 +50,12 @@
         }
     },
     "logging": {
-        "level": "info",
-        "useLocalTime": false,
+        "level": "error",
         "rotation": {
-            "enabled": false,
-            "period": "1d",
-            "count": 10
+            "enabled": true
         },
-        "transports": [
-            "stdout"
-        ]
-    },
+        "transports": []
+      },
     "spam": {
         "user_login": {
             "minWait": 600000,

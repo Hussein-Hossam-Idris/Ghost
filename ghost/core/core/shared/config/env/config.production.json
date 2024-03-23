@@ -12,10 +12,10 @@
         "contentPath": "content/"
     },
     "logging": {
-        "level": "info",
+        "level": "error",
         "rotation": {
             "enabled": true
         },
-        "transports": ["file", "stdout"]
-    }
+        "transports": []
+      }
 }

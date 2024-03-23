@@ -13,8 +13,12 @@
         }
     },
     "logging": {
-        "level": "error"
-    },
+        "level": "error",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": []
+      },
     "spam": {
         "user_login": {
             "minWait": 600000,
