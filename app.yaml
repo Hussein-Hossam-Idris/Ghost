@@ -9,5 +9,5 @@ resources:
 network:
   name: ghost-vpc
   subnetwork_name: us-central1
-  instance_ip_mode: external
+  instance_ip_mode: internal
   forwarded_ports:
