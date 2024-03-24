@@ -1,11 +1,19 @@
 {
     "steps": [
         {
+            "name": "gcr.io/cloud-builders/docker",
+            "args": ["build" ,"-t", "us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA", "."]
+        },
+        {
+            "name": "gcr.io/cloud-builders/docker",
+            "args": ["push", "us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA"]
+        },
+        {
             "name": "gcr.io/google.com/cloudsdktool/cloud-sdk",
             "entrypoint": "bash",
             "args": [
                 "-c",
-                "gcloud config set app/cloud_build_timeout 3600 && gcloud app deploy --verbosity=debug --appyaml=app.yaml"
+                "gcloud config set app/cloud_build_timeout 3600 && gcloud app deploy --verbosity=debug --appyaml=app.yaml --version=$COMMIT_SHA --image-url=us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA"
             ]
         }
     ],
