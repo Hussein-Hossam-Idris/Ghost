@@ -1,5 +1,5 @@
 {
-    "url": "http://localhost:8080",
+    "url": "http://localhost:2389",
     "database": {
         "client": "sqlite3",
         "connection": {
@@ -9,7 +9,7 @@
         "debug": false
     },
     "server": {
-        "port": 8080
+        "port": 2389
     },
     "logging": {
         "level": "error"
