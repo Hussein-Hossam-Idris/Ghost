@@ -38,7 +38,8 @@ steps:
       - |
         gcloud compute instance-groups managed rolling-action start-update ghost-mig \
         --max-unavailable=0 \
-        --version=template=ghost-template-v$COMMIT_SHA
+        --version=template=ghost-template-v$COMMIT_SHA \
+        --region=us-central1
 
 
 
