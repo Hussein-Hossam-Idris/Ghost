@@ -14,14 +14,12 @@ steps:
         --container-image=us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA \
         --machine-type=e2-standard-2 \
         --boot-disk-size=40GB \
-        --boot-disk-type=pd-standard\
+        --boot-disk-type=pd-standard \
         --image=cos-stable-109-17800-147-38\
-        --image-project=cos-cloud\
+        --image-project=cos-cloud \
         --service-account=ghost-sa@radiant-firefly-418114.iam.gserviceaccount.com \
         --region=us-central1 \
-        --container-privileged \
-        --network=ghost-vpc \
-        --subnet=us-central1 \
+        --container-privileged --network=ghost-vpc --subnet=us-central1
 
   - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
     entrypoint: 'bash'
