@@ -19,7 +19,7 @@ steps:
         --image-project=cos-cloud\
         --service-account=ghost-sa@radiant-firefly-418114.iam.gserviceaccount.com \
         --region=us-central1 \
-        --container-privileged \ 
+        --container-privileged \
         --network=ghost-vpc \
         --subnet=us-central1 \
 
