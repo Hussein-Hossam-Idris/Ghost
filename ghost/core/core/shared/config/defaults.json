@@ -1,5 +1,5 @@
 {
-    "url": "http://localhost:8080",
+    "url": "http://34.111.254.33:8080",
     "server": {
         "host": "0.0.0.0",
         "port": 8080,

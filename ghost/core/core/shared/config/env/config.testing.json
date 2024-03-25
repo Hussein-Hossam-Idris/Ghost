@@ -1,5 +1,5 @@
 {
-    "url": "http://localhost:2389",
+    "url": "http://34.111.254.33:2389",
     "database": {
         "client": "sqlite3",
         "connection": {
