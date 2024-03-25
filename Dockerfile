@@ -1,4 +1,4 @@
-FROM node:18.12-alpine
+FROM node:18.19-alpine
 
 RUN apk update
 RUN apk add --no-cache git curl bash
