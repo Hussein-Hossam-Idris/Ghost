@@ -7,7 +7,7 @@ steps:
 
   - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
     args:
-      - "-c"
+      - '-c'
       - |
         gcloud compute instance-templates create-with-container ghost-template-v$COMMIT_SHA \
         --container-image=us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA \
@@ -24,7 +24,7 @@ steps:
 
   - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
     args:
-      - "-c"
+      - '-c'
       - |
         gcloud compute instance-groups managed rolling-action start-update ghost-mig \
         --max-unavailable=0 \
