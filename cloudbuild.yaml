@@ -5,7 +5,8 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "us-central1-docker.pkg.dev/$PROJECT_ID/ghost-app-repo/ghost-app:$COMMIT_SHA"]
 
-  - name: "gcr.io/cloud-builders/gcloud"
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: 'bash'
     args:
       - '-c'
       - |
@@ -22,7 +23,8 @@ steps:
         --network=ghost-vpc \
         --subnet=us-central1 \
 
-  - name: "gcr.io/cloud-builders/gcloud"
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: 'bash'
     args:
       - '-c'
       - |
